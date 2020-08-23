@@ -1,0 +1,123 @@
+@use "sass:map";
+@use "sass:math";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$palettes: (
+  base: (
+    "black": #000,
+    "white": #fff,
+    "transparent": transparent
+  ),
+  #808080: (
+    1: #222,
+    2: #444,
+    3: #666,
+    4: #888,
+    5: #AAA,
+    6: #CCC,
+    7: #EEE
+  ),
+  brand: (
+    "gold": #d1ac5f,
+    "aqua": #61AAD1,
+    "blue": #6361D1,
+    "purple": #AE61D1,
+    "black": #131B23,
+    "blood": #5E0B15,
+    "red": #D16361,
+    "green": #61D1AE
+  ),
+  gold: (
+    0: #a16611,
+    1: #b18345,
+    2: #c69e56,
+    3: #d1ac5f,
+    4: #dcb96d,
+    5: #e4c172,
+    6: #eece75,
+    7: #f7e090,
+    8: #ede9b5
+  ),
+  bng: (
+    "blue": #201e5c, //#26235e
+    "gold": #f7d116,
+    "l-blue": #A5A3E1,
+    "l-gold": #FDF3C4,
+    "m-blue": #4B4799,
+    "m-gold": #FAE475,
+    "d-blue": #100F2E,
+    "d-gold": #625104,
+  ),
+  rainbow: (
+    "red":#f72116,
+    "orange":#f78f16,
+    "yellow":#f7d316,
+    "green":#589c2b,
+    "blue":#4646a2,
+    "purple":#6c1a86
+  ),
+  skule: (
+    "black": #0a0a0a,
+    "white": #FFF,
+    "blue": #59a1c6,
+    "gold": #ffec8e,
+    "purple": #8372bb,
+    "green": #68ba98,
+    "teal": #5da7a7,
+    "orange": #ffcf8e,
+    "red": #ff8e8e
+  )
+);
+@function p($palette: brand,$tone) {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+@function t($color: black,$amount: 0.2) {
+  @return transparentize($color,$amount);
+}
+
+@each $color, $val in map-get($palettes,brand) {
+  .bg-#{$color} {
+    background-color: $val;
+  }
+  .text-#{$color} {
+    color: $val;
+  }
+  .border-#{$color} {
+    border-color: $val !important;
+  }
+}
+@each $color, $val in map-get($palettes,gold) {
+  .bg-gold-#{$color} {
+    background-color: $val;
+  }
+  .text-gold-#{$color} {
+    color: $val;
+  }
+  .border-gold-#{$color} {
+    border-color: $val !important;
+  }
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+ padding-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+
+  &> div.container-fluid:first-of-type {
+    flex: 1 0 auto;
+  }
+}
+.footer {
+  flex-shrink: 0;
+}
+.nav-link {
+  color: t(p(brand,"gold")) !important;
+  transition:color 0.25s ease-in-out;
+  &:hover {
+    color: p(gold,6) !important;
+  }
+}
