@@ -71,11 +71,12 @@ $palettes: (
 @function p($palette: brand,$tone) {
   @return map-get(map-get($palettes, $palette), $tone);
 }
+
 @function t($color: black,$amount: 0.2) {
-  @return transparentize($color,$amount);
+  @return transparentize($color, $amount);
 }
 
-@each $color, $val in map-get($palettes,brand) {
+@each $color, $val in map-get($palettes, brand) {
   .bg-#{$color} {
     background-color: $val;
   }
@@ -86,7 +87,8 @@ $palettes: (
     border-color: $val !important;
   }
 }
-@each $color, $val in map-get($palettes,gold) {
+
+@each $color, $val in map-get($palettes, gold) {
   .bg-gold-#{$color} {
     background-color: $val;
   }
@@ -98,26 +100,152 @@ $palettes: (
   }
 }
 
-html,body {
+@each $size in "xx-small", "x-small", "smaller", "small", "medium", "large", "larger", "x-large", "xx-large" {
+  .font-size-#{$size} {
+    font-size: #{$size} !important;
+  }
+}
+
+* {
+  font-family: Lato, sans-serif;
+}
+
+html, body {
   height: 100%;
 }
 
 body {
- padding-top: 3.5rem;
+  padding-top: 3.5rem;
   display: flex;
   flex-direction: column;
+  overflow-x:hidden;
 
-  &> div.container-fluid:first-of-type {
+  & > div.container-fluid:first-of-type {
     flex: 1 0 auto;
   }
 }
+
 .footer {
   flex-shrink: 0;
 }
+
 .nav-link {
-  color: t(p(brand,"gold")) !important;
-  transition:color 0.25s ease-in-out;
+  color: white;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  font-size: large;
+  @extend .px-2;
+
   &:hover {
-    color: p(gold,6) !important;
+    background-color: white;
+    color: p(brand,"blue");
+  }
+}
+
+.index {
+  & h1 {
+    font-size: 7rem;
+    font-weight: bolder;
+  }
+
+  & h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 1rem;
+  }
+}
+
+nav, .footer {
+  background-color: t(white,0.9);
+}
+.nav-item {
+  @extend .mx-1;
+}
+
+.gw-landing {
+  margin-top: 30vh;
+  margin-left: 3rem;
+}
+
+object.logo {
+  top: 50%;
+
+  position: absolute;
+  animation: rotato 10s ease infinite;
+  @include media-breakpoint-only(xl) {
+    height: 60vh;
+    left: 70%;
+  }
+  @include media-breakpoint-only(lg) {
+    height: 50vh;
+    left: 80%;
+  }
+  @include media-breakpoint-only(md) {
+    height: 35vh;
+    left: 80%;
+  }
+
+  & * {
+    fill: p(gold, 2);
+  }
+}
+
+@keyframes rotato {
+  0% {
+    transform: translate(-50%, -50%) rotate(-3deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(3deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-3deg);
+  }
+}
+
+.gold-gradient {
+  background-size: 100%;
+  background-image: linear-gradient(90deg, p(gold, 1), p(gold, 5), p(gold, 3), p(gold, 8), p(gold, 4), p(gold, 1), p(gold, 5), p(gold, 3), p(gold, 8), p(gold, 4));
+  animation: gold-sliding 4s linear infinite;
+}
+
+@keyframes gold-sliding {
+  0% {
+    background-position: 100%
+  }
+  100% {
+    background-position: 0
+  }
+}
+
+.btn {
+  display: inline-block;
+  -webkit-appearance: none;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: large;
+  min-width: 6em;
+  @include media-breakpoint-down(sm) {
+    &, & ~ .dropdown-menu {
+      width: 100%;
+      margin: 0.5em 0 !important;
+    }
+  }
+
+  &-gold {
+    @extend .text-gold-5;
+    border: 2px solid p(gold,5);
+    background-color: p(brand,"blue") !important;
+
+    &:hover {
+      border: 2px solid p(gold,5);
+      color: p(brand, "blue") !important;
+      background-color: p(gold,5) !important;
+    }
+
+    &.disabled {
+      background-color: p(base, "grey-2") !important;
+      border: 2px solid p(base, "grey-2") !important;
+      color: p(base, "grey-3") !important;
+    }
   }
 }
