@@ -10363,6 +10363,50 @@ object.logo-minor.logo-diamonds {
   animation: diamonds 20s linear infinite;
 }
 
+.seven-stars-container {
+  padding-top: 10vh;
+}
+
+.seven-stars {
+  height: 100vh;
+  position: absolute;
+}
+
+.stars-1 {
+  top: 147px;
+  left: 94px;
+}
+
+.stars-2 {
+  top: 207px;
+  left: 217px;
+}
+
+.stars-3 {
+  top: 387px;
+  left: 207px;
+}
+
+.stars-4 {
+  top: 540px;
+  left: 100px;
+}
+
+.stars-5 {
+  top: 644px;
+  left: 194px;
+}
+
+.stars-6 {
+  top: 830px;
+  left: 184px;
+}
+
+.stars-7 {
+  top: 960px;
+  left: 107px;
+}
+
 @keyframes gw-chill {
   0% {
     transform: translate(-50%, -50%) rotate(-3deg);
