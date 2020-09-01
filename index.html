@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>Godiva Week</title>
 </head>
-<body class="index bg-blue">
+<body class="index bg-index">
 <nav class="navbar navbar-expand-lg fixed-top border-bottom border-white">
     <a class="navbar-brand py-0" href="#">
         <img src="logos/W-mono-inverted.png" height="30" alt="B&G" class="nav-logo pr-2 mr-1 border-right border-white"/>
@@ -37,15 +37,31 @@
         </ul>
     </div>
 </nav>
-<object type="image/svg+xml" data="logos/Godiva%20Week%20Logo.svg" class="logo"></object>
+<object type="image/svg+xml" data="logos/Godiva%20Week%20Logo.svg" class="logo-main"></object>
+<object type="image/svg+xml" data="logos/clubs.svg" class="logo-minor logo-clubs"></object>
+<object type="image/svg+xml" data="logos/spade.svg" class="logo-minor logo-spades"></object>
+<object type="image/svg+xml" data="logos/heart.svg" class="logo-minor logo-hearts"></object>
+<object type="image/svg+xml" data="logos/diamond.svg" class="logo-minor logo-diamonds"></object>
 <div class="container-fluid">
     <div class="row mt-auto">
         <div class="col-md-8">
             <div class="gw-landing">
-                <h1 class="text-gold-5">Godiva Week</h1>
-                <h2 class="text-white">January 4th–9th, 2021</h2>
-                <h2 class="text-aqua">Organized by the Blue & Gold Committee</h2>
-                <a class="btn btn-gold m-3" href="#about">Explore the magic <i class="fas fa-arrow-right ml-1"></i></a>
+                <h1 class="text-gold-5 rellax" data-rellax-speed="2.5" data-rellax-percentage="0.6">Godiva Week</h1>
+                <h2 class="text-white rellax" data-rellax-speed="1.5" data-rellax-percentage="0.5">January 4th–9th, 2021</h2>
+                <h2 class="text-aqua rellax" data-rellax-speed="1.5" data-rellax-percentage="0.5">Organized by <a class="gw-landing-link" href="https://blueandgold.skule.ca">the Blue & Gold Committee</a></h2>
+                <a class="btn btn-gold m-3 rellax" href="#about" data-rellax-speed="-2" data-rellax-percentage="0.3">Explore the magic <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="about">
+        <div class="col-md-8 offset-md-1">
+            <div class="section-about">
+                <h1 class="text-white rellax" data-rellax-speed="0" data-rellax-percentage="0.8">What is Godiva Week?</h1>
+                <h2 class="text-white rellax" data-rellax-speed="3" data-rellax-percentage="0.5">
+                    We're glad you asked.<br>
+                    <span class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi turpis, condimentum at fermentum et, venenatis et dui. Duis nunc metus, tincidunt ut consectetur rutrum, hendrerit non nisl. Sed magna libero, faucibus a eros in, vestibulum lacinia leo. Sed feugiat aliquet congue. Donec tristique dui sit amet felis mollis consequat. Quisque convallis felis eu sapien facilisis tincidunt a pretium sem. Praesent interdum eget odio eget tincidunt. Proin diam felis, interdum id ligula at, auctor eleifend nulla. Donec ex lorem, interdum quis leo nec, venenatis dapibus erat. Maecenas elementum pretium risus, at iaculis nunc egestas eu. Donec bibendum gravida molestie.
+                    </span>
+                </h2>
             </div>
         </div>
     </div>
@@ -67,5 +83,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+<script src="scripts/rellax.min.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 </html>
