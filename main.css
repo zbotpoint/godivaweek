@@ -10372,38 +10372,43 @@ object.logo-minor.logo-diamonds {
   position: absolute;
 }
 
+.seven-stars-container span {
+  font-size: medium;
+  display: block;
+}
+
 .stars-1 {
-  top: 147px;
-  left: 94px;
+  top: 130px;
+  left: 98px;
 }
 
 .stars-2 {
-  top: 207px;
+  top: 190px;
   left: 217px;
 }
 
 .stars-3 {
-  top: 387px;
+  top: 370px;
   left: 207px;
 }
 
 .stars-4 {
-  top: 540px;
+  top: 523px;
   left: 100px;
 }
 
 .stars-5 {
-  top: 644px;
+  top: 627px;
   left: 194px;
 }
 
 .stars-6 {
-  top: 830px;
+  top: 813px;
   left: 184px;
 }
 
 .stars-7 {
-  top: 960px;
+  top: 943px;
   left: 107px;
 }
 
