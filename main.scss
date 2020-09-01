@@ -273,8 +273,11 @@ object {
       p(brand,"purple") 45%,
       p(brand,"purple") 50%,
       p(bng,"blue") 90%,
-      p(bng,"blue") 100%
+      p(brand,"black") 100%
   );
+}
+.bg-body {
+  background: url("logos/stars.png") repeat-y;
 }
 
 @keyframes gold-sliding {

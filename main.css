@@ -10419,7 +10419,11 @@ object.logo-minor.logo-diamonds {
   }
 }
 .bg-index {
-  background: linear-gradient(#6361D1, #6361D1 30%, #AE61D1 45%, #AE61D1 50%, #201e5c 90%, #201e5c 100%);
+  background: linear-gradient(#6361D1, #6361D1 30%, #AE61D1 45%, #AE61D1 50%, #201e5c 90%, #131B23 100%);
+}
+
+.bg-body {
+  background: url("logos/stars.png") repeat-y;
 }
 
 @keyframes gold-sliding {
