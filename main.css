@@ -10319,6 +10319,8 @@ object.logo-main {
   position: absolute;
   top: 50%;
   animation: gw-chill 10s ease infinite;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 @media (min-width: 1200px) {
   object.logo-main {
@@ -10349,6 +10351,8 @@ object.logo-minor {
   height: 23vh;
   top: 50%;
   left: 70%;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 object.logo-minor.logo-spades {
   animation: spades 20s linear infinite;
@@ -10414,57 +10418,57 @@ object.logo-minor.logo-diamonds {
 
 @keyframes gw-chill {
   0% {
-    transform: translate(-50%, -50%) rotate(-3deg);
+    transform: translate3d(-50%, -50%, 0) rotate(-3deg);
   }
   50% {
-    transform: translate(-50%, -50%) rotate(3deg);
+    transform: translate3d(-50%, -50%, 0) rotate(3deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(-3deg);
+    transform: translate3d(-50%, -50%, 0) rotate(-3deg);
   }
 }
 @keyframes spades {
   0% {
-    transform: translate(-50%, -50%) rotate(-3deg) translate(-13vw, -28vh);
+    transform: translate(-50%, -50%) rotate(-3deg) translate3d(-13vw, -28vh, 0);
   }
   50% {
-    transform: translate(-50%, -50%) rotate(3deg) translate(-13vw, -28vh);
+    transform: translate(-50%, -50%) rotate(3deg) translate3d(-13vw, -28vh, 0);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(-3deg) translate(-13vw, -28vh);
+    transform: translate(-50%, -50%) rotate(-3deg) translate3d(-13vw, -28vh, 0);
   }
 }
 @keyframes hearts {
   0% {
-    transform: translate(-50%, -50%) rotate(-3deg) translate(20vw, -27vh);
+    transform: translate(-50%, -50%) rotate(-3deg) translate3d(20vw, -27vh, 0);
   }
   50% {
-    transform: translate(-50%, -50%) rotate(3deg) translate(20vw, -27vh);
+    transform: translate(-50%, -50%) rotate(3deg) translate3d(20vw, -27vh, 0);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(-3deg) translate(20vw, -27vh);
+    transform: translate(-50%, -50%) rotate(-3deg) translate3d(20vw, -27vh, 0);
   }
 }
 @keyframes clubs {
   0% {
-    transform: translate(-50%, -50%) rotate(-3deg) translate(17vw, 18vh);
+    transform: translate(-50%, -50%) rotate(-3deg) translate3d(17vw, 18vh, 0);
   }
   50% {
-    transform: translate(-50%, -50%) rotate(3deg) translate(17vw, 18vh);
+    transform: translate(-50%, -50%) rotate(3deg) translate3d(17vw, 18vh, 0);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(-3deg) translate(17vw, 18vh);
+    transform: translate(-50%, -50%) rotate(-3deg) translate3d(17vw, 18vh, 0);
   }
 }
 @keyframes diamonds {
   0% {
-    transform: translate(-50%, -50%) rotate(-3deg) translate(-20vw, 24vh);
+    transform: translate(-50%, -50%) rotate(-3deg) translate3d(-20vw, 24vh, 0);
   }
   50% {
-    transform: translate(-50%, -50%) rotate(3deg) translate(-20vw, 24vh);
+    transform: translate(-50%, -50%) rotate(3deg) translate3d(-20vw, 24vh, 0);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(-3deg) translate(-20vw, 24vh);
+    transform: translate(-50%, -50%) rotate(-3deg) translate3d(-20vw, 24vh, 0);
   }
 }
 .bg-index {
@@ -10473,7 +10477,7 @@ object.logo-minor.logo-diamonds {
 
 .bg-body {
   background: url("logos/stars.png") repeat-y;
-  padding-bottom: 30vh;
+  padding-bottom: 40vh;
 }
 
 @keyframes gold-sliding {

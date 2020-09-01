@@ -194,6 +194,9 @@ object {
     position: absolute;
     top: 50%;
     animation: gw-chill 10s ease infinite;
+    will-change: transform;
+    backface-visibility: hidden;
+
     @include media-breakpoint-only(xl) {
       height: 60vh;
       left: 70%;
@@ -217,6 +220,9 @@ object {
     height: 23vh;
     top: 50%;
     left: 70%;
+    will-change: transform;
+    backface-visibility: hidden;
+
     &.logo-spades {
       animation: spades 20s linear infinite;
     }
@@ -274,25 +280,25 @@ object {
 }
 @keyframes gw-chill {
   0% {
-    transform: translate(-50%,-50%) rotate(-3deg);
+    transform: translate3d(-50%,-50%,0) rotate(-3deg);
   }
   50% {
-    transform: translate(-50%,-50%) rotate(3deg);
+    transform: translate3d(-50%,-50%,0) rotate(3deg);
   }
   100% {
-    transform: translate(-50%,-50%) rotate(-3deg);
+    transform: translate3d(-50%,-50%,0) rotate(-3deg);
   }
 }
 @mixin rotato($x: 0, $y: 0) {
     0% {
       //transform: translate(-50%,-50%) rotate(0) translate(#{$x - 70}vw,#{$y - 50}vh) rotate(0);
-      transform: translate(-50%,-50%) rotate(-3deg) translate(#{$x - 70}vw,#{$y - 50}vh);
+      transform: translate(-50%,-50%) rotate(-3deg) translate3d(#{$x - 70}vw,#{$y - 50}vh,0);
     }
     50% {
-      transform: translate(-50%,-50%) rotate(3deg) translate(#{$x - 70}vw,#{$y - 50}vh);
+      transform: translate(-50%,-50%) rotate(3deg) translate3d(#{$x - 70}vw,#{$y - 50}vh,0);
     }
     100% {
-      transform: translate(-50%,-50%) rotate(-3deg) translate(#{$x - 70}vw,#{$y - 50}vh);
+      transform: translate(-50%,-50%) rotate(-3deg) translate3d(#{$x - 70}vw,#{$y - 50}vh,0);
     }
 }
 @keyframes spades {
@@ -321,7 +327,7 @@ object {
 }
 .bg-body {
   background: url("logos/stars.png") repeat-y;
-  padding-bottom: 30vh;
+  padding-bottom: 40vh;
 }
 
 @keyframes gold-sliding {
