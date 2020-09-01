@@ -157,8 +157,8 @@ body {
 }
 
 .index {
-  min-height: 300vh;
-  overflow: auto;
+  //min-height: 300vh;
+  overflow-x: hidden;
   & h1 {
     font-size: 7rem;
     font-weight: bolder;
@@ -314,12 +314,14 @@ object {
       p(brand,"blue") 30%,
       p(brand,"purple") 45%,
       p(brand,"purple") 50%,
-      p(bng,"blue") 90%,
+      p(bng,"blue") 85%,
+      p(brand,"black") 95%,
       p(brand,"black") 100%
   );
 }
 .bg-body {
   background: url("logos/stars.png") repeat-y;
+  padding-bottom: 30vh;
 }
 
 @keyframes gold-sliding {

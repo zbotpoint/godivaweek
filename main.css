@@ -10287,8 +10287,7 @@ body > div.container-fluid:first-of-type, body > div.container-sm:first-of-type,
 }
 
 .index {
-  min-height: 300vh;
-  overflow: auto;
+  overflow-x: hidden;
 }
 .index h1 {
   font-size: 7rem;
@@ -10469,11 +10468,12 @@ object.logo-minor.logo-diamonds {
   }
 }
 .bg-index {
-  background: linear-gradient(#6361D1, #6361D1 30%, #AE61D1 45%, #AE61D1 50%, #201e5c 90%, #131B23 100%);
+  background: linear-gradient(#6361D1, #6361D1 30%, #AE61D1 45%, #AE61D1 50%, #201e5c 85%, #131B23 95%, #131B23 100%);
 }
 
 .bg-body {
   background: url("logos/stars.png") repeat-y;
+  padding-bottom: 30vh;
 }
 
 @keyframes gold-sliding {
