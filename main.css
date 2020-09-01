@@ -10287,7 +10287,8 @@ body > div.container-fluid:first-of-type, body > div.container-sm:first-of-type,
 }
 
 .index {
-  height: 300vh;
+  min-height: 300vh;
+  overflow: auto;
 }
 .index h1 {
   font-size: 7rem;

@@ -157,7 +157,8 @@ body {
 }
 
 .index {
-  height: 300vh;
+  min-height: 300vh;
+  overflow: auto;
   & h1 {
     font-size: 7rem;
     font-weight: bolder;
