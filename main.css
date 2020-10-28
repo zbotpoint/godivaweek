@@ -10475,6 +10475,14 @@ object.logo-minor.logo-diamonds {
   background: linear-gradient(#6361D1, #6361D1 30%, #AE61D1 45%, #AE61D1 50%, #201e5c 85%, #131B23 95%, #131B23 100%);
 }
 
+.bg-index-aqua {
+  background: linear-gradient(#61AAD1, #61AAD1 30%, #AE61D1 45%, #AE61D1 50%, #201e5c 85%, #131B23 95%, #131B23 100%);
+}
+
+.bg-index-bngblue {
+  background: linear-gradient(#201e5c, #201e5c 30%, #AE61D1 45%, #AE61D1 50%, #201e5c 85%, #131B23 95%, #131B23 100%);
+}
+
 .bg-index-new {
   background: linear-gradient(#007bff, #007bff 30%, #AE61D1 45%, #AE61D1 50%, #201e5c 85%, #131B23 95%, #131B23 100%);
 }

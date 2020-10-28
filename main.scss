@@ -325,6 +325,28 @@ object {
       p(brand,"black") 100%
   );
 }
+.bg-index-aqua {
+  background: linear-gradient(
+      p(brand,"aqua"),
+      p(brand,"aqua") 30%,
+      p(brand,"purple") 45%,
+      p(brand,"purple") 50%,
+      p(bng,"blue") 85%,
+      p(brand,"black") 95%,
+      p(brand,"black") 100%
+  );
+}
+.bg-index-bngblue {
+  background: linear-gradient(
+      p(bng,"blue"),
+      p(bng,"blue") 30%,
+      p(brand,"purple") 45%,
+      p(brand,"purple") 50%,
+      p(bng,"blue") 85%,
+      p(brand,"black") 95%,
+      p(brand,"black") 100%
+  );
+}
 .bg-index-new {
   background: linear-gradient(
       #007bff,
