@@ -325,6 +325,17 @@ object {
       p(brand,"black") 100%
   );
 }
+.bg-index-new {
+  background: linear-gradient(
+      #007bff,
+      #007bff 30%,
+      p(brand,"purple") 45%,
+      p(brand,"purple") 50%,
+      p(bng,"blue") 85%,
+      p(brand,"black") 95%,
+      p(brand,"black") 100%
+  );
+}
 .bg-body {
   background: url("logos/stars.png") repeat-y;
   padding-bottom: 40vh;
