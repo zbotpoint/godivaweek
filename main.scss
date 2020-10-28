@@ -347,6 +347,17 @@ object {
       p(brand,"black") 100%
   );
 }
+.bg-index-un {
+  background: linear-gradient(
+      #5B92E5,
+      #5B92E5 30%,
+      p(brand,"purple") 45%,
+      p(brand,"purple") 50%,
+      p(bng,"blue") 85%,
+      p(brand,"black") 95%,
+      p(brand,"black") 100%
+  );
+}
 .bg-index-french {
   background: linear-gradient(
       #77B5FE,
