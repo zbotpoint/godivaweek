@@ -336,10 +336,10 @@ object {
       p(brand,"black") 100%
   );
 }
-.bg-index-bngblue {
+.bg-index-baby {
   background: linear-gradient(
-      p(bng,"blue"),
-      p(bng,"blue") 30%,
+      #89CFF0,
+      #89CFF0 30%,
       p(brand,"purple") 45%,
       p(brand,"purple") 50%,
       p(bng,"blue") 85%,
@@ -347,10 +347,32 @@ object {
       p(brand,"black") 100%
   );
 }
-.bg-index-new {
+.bg-index-french {
   background: linear-gradient(
-      #007bff,
-      #007bff 30%,
+      #77B5FE,
+      #77B5FE 30%,
+      p(brand,"purple") 45%,
+      p(brand,"purple") 50%,
+      p(bng,"blue") 85%,
+      p(brand,"black") 95%,
+      p(brand,"black") 100%
+  );
+}
+.bg-index-argentina {
+  background: linear-gradient(
+      #6CB4EE,
+      #6CB4EE 30%,
+      p(brand,"purple") 45%,
+      p(brand,"purple") 50%,
+      p(bng,"blue") 85%,
+      p(brand,"black") 95%,
+      p(brand,"black") 100%
+  );
+}
+.bg-index-moroccan {
+  background: linear-gradient(
+      #468fea,
+      #468fea 30%,
       p(brand,"purple") 45%,
       p(brand,"purple") 50%,
       p(bng,"blue") 85%,
