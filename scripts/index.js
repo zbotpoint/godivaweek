@@ -1,6 +1,6 @@
 $(document).ready(
     function () {
-        var rellax = new Rellax('.rellax2');
+        var rellax = new Rellax('.rellax');
         AOS.init();
     }
 );

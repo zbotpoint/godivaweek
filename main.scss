@@ -8,7 +8,7 @@ $palettes: (
     "white": #fff,
     "transparent": transparent
   ),
-  #808080: (
+  grey: (
     1: #222,
     2: #444,
     3: #666,
@@ -19,13 +19,13 @@ $palettes: (
   ),
   brand: (
     "gold": #d1ac5f,
-    "aqua": #61AAD1,
-    "blue": #6361D1,
-    "purple": #AE61D1,
+    "aqua": #9AD5CA,
+    "blue": #468fea,
+    "purple": #A833B9,
     "black": #131B23,
     "blood": #5E0B15,
     "red": #D16361,
-    "green": #61D1AE
+    "green": #5B8E7D
   ),
   gold: (
     0: #a16611,
@@ -325,72 +325,6 @@ object {
       p(brand,"black") 100%
   );
 }
-.bg-index-aqua {
-  background: linear-gradient(
-      p(brand,"aqua"),
-      p(brand,"aqua") 30%,
-      p(brand,"purple") 45%,
-      p(brand,"purple") 50%,
-      p(bng,"blue") 85%,
-      p(brand,"black") 95%,
-      p(brand,"black") 100%
-  );
-}
-.bg-index-baby {
-  background: linear-gradient(
-      #89CFF0,
-      #89CFF0 30%,
-      p(brand,"purple") 45%,
-      p(brand,"purple") 50%,
-      p(bng,"blue") 85%,
-      p(brand,"black") 95%,
-      p(brand,"black") 100%
-  );
-}
-.bg-index-un {
-  background: linear-gradient(
-      #5B92E5,
-      #5B92E5 30%,
-      p(brand,"purple") 45%,
-      p(brand,"purple") 50%,
-      p(bng,"blue") 85%,
-      p(brand,"black") 95%,
-      p(brand,"black") 100%
-  );
-}
-.bg-index-french {
-  background: linear-gradient(
-      #77B5FE,
-      #77B5FE 30%,
-      p(brand,"purple") 45%,
-      p(brand,"purple") 50%,
-      p(bng,"blue") 85%,
-      p(brand,"black") 95%,
-      p(brand,"black") 100%
-  );
-}
-.bg-index-argentina {
-  background: linear-gradient(
-      #6CB4EE,
-      #6CB4EE 30%,
-      p(brand,"purple") 45%,
-      p(brand,"purple") 50%,
-      p(bng,"blue") 85%,
-      p(brand,"black") 95%,
-      p(brand,"black") 100%
-  );
-}
-.bg-index-moroccan {
-  background: linear-gradient(
-      #468fea,
-      #468fea 30%,
-      p(brand,"purple") 45%,
-      p(brand,"purple") 50%,
-      p(bng,"blue") 85%,
-      p(brand,"black") 95%,
-      p(brand,"black") 100%
-  );
-}
 .bg-body {
   background: url("logos/stars.png") repeat-y;
   padding-bottom: 40vh;
@@ -438,9 +372,17 @@ object {
     }
 
     &.disabled {
-      background-color: p(base, "grey-2") !important;
-      border: 2px solid p(base, "grey-2") !important;
-      color: p(base, "grey-3") !important;
+      background-color: p(grey, 2) !important;
+      border: 2px solid p(grey, 2) !important;
+      color: p(grey, 3) !important;
     }
   }
+}
+
+.bg-schedule {
+  background: linear-gradient(
+    p(brand,"blue"),
+    p(brand,"blue") 90%,
+    p(brand,"black") 100%
+  );
 }
