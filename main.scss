@@ -162,12 +162,19 @@ body {
   & h1 {
     font-size: 7rem;
     font-weight: bolder;
+    @include media-breakpoint-down(lg) {
+      font-size: 6rem;
+    }
   }
 
   & h2 {
     font-size: 2rem;
     font-weight: bolder;
     margin-left: 1rem;
+    @include media-breakpoint-down(lg) {
+      font-size: 2rem;
+      margin-left: 0.25rem;
+    }
   }
 }
 
@@ -182,6 +189,10 @@ nav, .footer {
   margin-top: 30vh;
   margin-left: 3rem;
   height: 100vh;
+  @include media-breakpoint-down(md) {
+    margin-left: 0;
+    margin-top: 5vh;
+  }
 }
 .gw-landing-link {
   color: unset !important;
@@ -202,15 +213,8 @@ object {
       left: 70%;
     }
     @include media-breakpoint-only(lg) {
-      height: 50vh;
+      height: 30vh;
       left: 80%;
-    }
-    @include media-breakpoint-only(md) {
-      height: 35vh;
-      left: 80%;
-    }
-    @include media-breakpoint-down(sm) {
-      display:none;
     }
   }
 
@@ -385,4 +389,8 @@ object {
     p(brand,"blue") 90%,
     p(brand,"black") 100%
   );
+}
+
+.countdown-suits {
+  height: 4rem;
 }
