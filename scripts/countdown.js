@@ -10,7 +10,7 @@ function startTimer() {
 
         // Display the result in the element with id="demo"
         document.getElementById("countdown-timer").textContent =
-            "Only "+ d+ (d!==1?" days, ":" day, ")
+            ""+ d+ (d!==1?" days, ":" day, ")
             +h+ (h!==1?" hours, ":" hour, ")
             +m+ (m!==1?" minutes, ":" minute, ")
             +" and "+ s+ (s!==1?" seconds.":" second.");

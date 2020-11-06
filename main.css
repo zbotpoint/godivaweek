@@ -10290,23 +10290,21 @@ body > div.container-fluid:first-of-type, body > div.container-sm:first-of-type,
   overflow-x: hidden;
 }
 .index h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: bolder;
 }
 @media (max-width: 1199.98px) {
   .index h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 .index h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bolder;
-  margin-left: 1rem;
 }
 @media (max-width: 1199.98px) {
   .index h2 {
     font-size: 2rem;
-    margin-left: 0.25rem;
   }
 }
 
@@ -10334,7 +10332,7 @@ nav, .footer {
 object.logo-main {
   z-index: -1;
   position: absolute;
-  top: 50%;
+  top: 45%;
   animation: gw-chill 10s ease infinite;
   will-change: transform;
   backface-visibility: hidden;
@@ -10342,13 +10340,13 @@ object.logo-main {
 @media (min-width: 1200px) {
   object.logo-main {
     height: 60vh;
-    left: 70%;
+    left: 73%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   object.logo-main {
     height: 30vh;
-    left: 80%;
+    left: 83%;
   }
 }
 object.logo-minor {
@@ -10424,13 +10422,13 @@ object.logo-minor.logo-diamonds {
 
 @keyframes gw-chill {
   0% {
-    transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    transform: translate3d(-50%, -50%, 0);
   }
   50% {
-    transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    transform: translate3d(-50%, -50%, 0);
   }
   100% {
-    transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    transform: translate3d(-50%, -50%, 0);
   }
 }
 @keyframes spades {
