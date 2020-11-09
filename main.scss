@@ -18,7 +18,7 @@ $palettes: (
     7: #EEE
   ),
   brand: (
-    "gold": #d1ac5f,
+    "gold": #e4c172,
     "aqua": #9AD5CA,
     "blue": #468fea,
     "purple": #A833B9,
@@ -379,10 +379,3 @@ object {
   }
 }
 
-.bg-schedule {
-  background: linear-gradient(
-    p(brand,"blue"),
-    p(brand,"blue") 90%,
-    p(brand,"black") 100%
-  );
-}

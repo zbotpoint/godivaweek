@@ -261,7 +261,7 @@ Main Components
     margin-right: 0;
     border-radius: 1em;
     opacity: 0.85;
-    transition: opacity 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
   }
   .cd-schedule .events .single-event a {
     padding: 1.2em;
@@ -320,29 +320,50 @@ Main Components
   //background: main.p(base,"white");
   opacity: 1;
   & * {
-    //color: main.p(brand,"blue");
+    //color:main.p (brand,"blue");
+    //color: main.p(brand,"gold");
     text-decoration: none;
   }
 }
 
 .cd-schedule .single-event[data-event="event-1"],
-.cd-schedule [data-event="event-1"] .header-bg {
-  background: main.p(brand,"aqua");
+.cd-schedule [data-event="event-1"] {
+  &, & .header-bg {
+    background: main.t(main.p(brand, "blue"), 0.4);
+  }
+  &:hover .header-bg, &:hover {
+    background: main.p(brand, "blue");
+  }
 }
 
 .cd-schedule .single-event[data-event="event-2"],
-.cd-schedule [data-event="event-2"] .header-bg {
-  background: main.p(brand,"gold");
+.cd-schedule [data-event="event-2"] {
+  &, & .header-bg {
+    background: main.t(main.p(brand, "gold"), 0.4);
+  }
+  &:hover .header-bg, &:hover {
+    background: main.p(brand, "gold");
+  }
 }
 
 .cd-schedule .single-event[data-event="event-3"],
-.cd-schedule [data-event="event-3"] .header-bg {
-  background: main.p(brand,"red");
+.cd-schedule [data-event="event-3"] {
+  &, & .header-bg {
+    background: main.t(main.p(base, "white"), 0.4);
+  }
+  &:hover .header-bg, &:hover {
+    background: main.p(brand, "white");
+  }
 }
 
 .cd-schedule .single-event[data-event="event-4"],
-.cd-schedule [data-event="event-4"] .header-bg {
-  background: main.p(brand,"purple");
+.cd-schedule [data-event="event-4"] {
+  &, & .header-bg {
+    background: main.t(main.p(brand, "purple"), 0.4);
+  }
+  &:hover .header-bg, &:hover {
+    background: main.p(brand, "purple");
+  }
 }
 
 .cd-schedule .event-modal {
@@ -615,4 +636,23 @@ Main Components
 .cd-schedule.modal-is-open .cover-layer {
   opacity: 1;
   visibility: visible;
+}
+
+body {
+  min-height: 145vh;
+}
+
+.bg-schedule {
+  background: linear-gradient(main.p(bng,"blue") 0%,main.p(brand,"black") 100%);
+  &::before {
+    content: "";
+    background-image: url("../logos/stars.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+  }
 }

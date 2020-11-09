@@ -9914,15 +9914,15 @@ h3 {
   }
 }
 .bg-gold {
-  background-color: #d1ac5f;
+  background-color: #e4c172;
 }
 
 .text-gold {
-  color: #d1ac5f;
+  color: #e4c172;
 }
 
 .border-gold {
-  border-color: #d1ac5f !important;
+  border-color: #e4c172 !important;
 }
 
 .bg-aqua {
@@ -10521,10 +10521,6 @@ object.logo-minor.logo-diamonds {
   background-color: #444 !important;
   border: 2px solid #444 !important;
   color: #666 !important;
-}
-
-.bg-schedule {
-  background: linear-gradient(#468fea, #468fea 90%, #131B23 100%);
 }
 
 /*# sourceMappingURL=main.css.map */
