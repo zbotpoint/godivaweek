@@ -328,40 +328,40 @@ Main Components
 
 .cd-schedule .single-event[data-event="event-1"],
 .cd-schedule [data-event="event-1"] {
-  &, & .header-bg {
+  & {
     background: main.t(main.p(brand, "blue"), 0.4);
   }
-  &:hover .header-bg, &:hover {
+  & .header-bg, &:hover {
     background: main.p(brand, "blue");
   }
 }
 
 .cd-schedule .single-event[data-event="event-2"],
 .cd-schedule [data-event="event-2"] {
-  &, & .header-bg {
+  & {
     background: main.t(main.p(brand, "gold"), 0.4);
   }
-  &:hover .header-bg, &:hover {
+  & .header-bg, &:hover {
     background: main.p(brand, "gold");
   }
 }
 
 .cd-schedule .single-event[data-event="event-3"],
 .cd-schedule [data-event="event-3"] {
-  &, & .header-bg {
-    background: main.t(main.p(base, "white"), 0.4);
+  & {
+    background: main.t(main.p(grey,4), 0.4);
   }
-  &:hover .header-bg, &:hover {
-    background: main.p(brand, "white");
+  & .header-bg, &:hover {
+    background: main.p(grey,4);
   }
 }
 
 .cd-schedule .single-event[data-event="event-4"],
 .cd-schedule [data-event="event-4"] {
-  &, & .header-bg {
+  & {
     background: main.t(main.p(brand, "purple"), 0.4);
   }
-  &:hover .header-bg, &:hover {
+  & .header-bg, &:hover {
     background: main.p(brand, "purple");
   }
 }
