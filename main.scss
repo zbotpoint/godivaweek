@@ -160,21 +160,14 @@ body {
   //min-height: 300vh;
   overflow-x: hidden;
   & h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: bolder;
-    @include media-breakpoint-down(lg) {
-      font-size: 5rem;
-    }
   }
 
   & h2 {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bolder;
-    //margin-left: 1rem;
-    @include media-breakpoint-down(lg) {
-      font-size: 2rem;
-      //margin-left: 0.25rem;
-    }
+    margin-left: 1rem;
   }
 }
 
@@ -189,10 +182,6 @@ nav, .footer {
   margin-top: 30vh;
   margin-left: 3rem;
   height: 100vh;
-  @include media-breakpoint-down(md) {
-    margin-left: 0;
-    margin-top: 5vh;
-  }
 }
 .gw-landing-link {
   color: unset !important;
@@ -203,18 +192,25 @@ object {
   &.logo-main {
     z-index: -1;
     position: absolute;
-    top: 45%;
+    top: 50%;
     animation: gw-chill 10s ease infinite;
     will-change: transform;
     backface-visibility: hidden;
 
     @include media-breakpoint-only(xl) {
       height: 60vh;
-      left: 73%;
+      left: 70%;
     }
     @include media-breakpoint-only(lg) {
-      height: 30vh;
-      left: 83%;
+      height: 50vh;
+      left: 80%;
+    }
+    @include media-breakpoint-only(md) {
+      height: 35vh;
+      left: 80%;
+    }
+    @include media-breakpoint-down(sm) {
+      display:none;
     }
   }
 
@@ -284,13 +280,13 @@ object {
 }
 @keyframes gw-chill {
   0% {
-    transform: translate3d(-50%,-50%,0) ;//rotate(-3deg);
+    transform: translate3d(-50%,-50%,0) rotate(-3deg);
   }
   50% {
-    transform: translate3d(-50%,-50%,0) ;//rotate(3deg);
+    transform: translate3d(-50%,-50%,0) rotate(3deg);
   }
   100% {
-    transform: translate3d(-50%,-50%,0) ;//rotate(-3deg);
+    transform: translate3d(-50%,-50%,0) rotate(-3deg);
   }
 }
 @mixin rotato($x: 0, $y: 0) {
@@ -389,8 +385,4 @@ object {
     p(brand,"blue") 90%,
     p(brand,"black") 100%
   );
-}
-
-.countdown-suits {
-  height: 4rem;
 }
