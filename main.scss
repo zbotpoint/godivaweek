@@ -379,3 +379,31 @@ object {
   }
 }
 
+.bg-socials {
+  background: linear-gradient(p(bng,"blue") 0%,p(brand,"black") 100%);
+  &::before {
+    content: "";
+    background-image: url("logos/stars.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+  }
+}
+
+a.no-text-effects {
+  text-decoration: none;
+  color:p(base,"white");
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    opacity:0.8;
+  }
+}
+
+
+.vh-65 {
+  height:60vh;
+}

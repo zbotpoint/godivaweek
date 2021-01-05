@@ -10523,4 +10523,32 @@ object.logo-minor.logo-diamonds {
   color: #666 !important;
 }
 
+.bg-socials {
+  background: linear-gradient(#201e5c 0%, #131B23 100%);
+}
+.bg-socials::before {
+  content: "";
+  background-image: url("logos/stars.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+}
+
+a.no-text-effects {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+a.no-text-effects:hover {
+  opacity: 0.8;
+}
+
+.vh-65 {
+  height: 60vh;
+}
+
 /*# sourceMappingURL=main.css.map */

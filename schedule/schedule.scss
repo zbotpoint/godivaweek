@@ -196,11 +196,12 @@ Main Components
     width: 100%;
   }
   .cd-schedule .events .events-group {
-    width: 16.6%;
+    width: 20%;
     float: left;
     border-color: main.t(white,0.9);
     border-width: 3px 3px 3px 0;
     border-style: solid dashed;
+    border-bottom:none;
     /* reset style */
     margin-bottom: 0;
   }
