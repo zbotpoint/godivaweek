@@ -10756,8 +10756,9 @@ Main Components
   }
 
   .cd-schedule .events .events-group {
-    width: 16.6%;
+    width: 20%;
     float: left;
+    min-height: 140vh;
     border-color: rgba(255, 255, 255, 0.1);
     border-width: 3px 3px 3px 0;
     border-style: solid dashed;
@@ -11214,7 +11215,7 @@ Main Components
 }
 
 body {
-  min-height: 155vh;
+  min-height: 165vh;
 }
 
 .bg-schedule {
