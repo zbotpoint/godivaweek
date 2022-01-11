@@ -10597,8 +10597,6 @@ Main Components
 
 .cd-schedule::before {
   /* never visible - this is used in js to check the current MQ */
-  content: "mobile";
-  display: none;
 }
 
 @media only screen and (min-width: 800px) {
@@ -10613,9 +10611,9 @@ Main Components
     display: block;
   }
 
-  .cd-schedule::before {
-    content: "desktop";
-  }
+  /*cd-schedule::before {
+    content: 'desktop';
+  }*/
 }
 .cd-schedule .timeline {
   display: none;
@@ -11231,6 +11229,26 @@ body {
   bottom: 0;
   right: 0;
   opacity: 0.3;
+}
+
+.btn-purple {
+  color: #e4c172;
+  background-color: #713ec9;
+  border-color: #e4c172;
+  border-width: 3px;
+}
+.btn-purple:hover {
+  color: #713ec9;
+  background-color: #e4c172;
+  border-color: #e4c172;
+}
+
+.btn-xl {
+  padding: 0.5rem 1rem;
+  font-size: 1.67rem;
+  line-height: 2;
+  border-radius: 0.4rem;
+  z-index: 99999;
 }
 
 /*# sourceMappingURL=schedule.css.map */

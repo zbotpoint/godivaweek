@@ -42,8 +42,8 @@ Main Components
 
 .cd-schedule::before {
   /* never visible - this is used in js to check the current MQ */
-  content: 'mobile';
-  display: none;
+  //content: 'mobile';
+  //display: none;
 }
 
 @media only screen and (min-width: 800px) {
@@ -56,9 +56,9 @@ Main Components
     content: "";
     display: block;
   }
-  .cd-schedule::before {
+  /*cd-schedule::before {
     content: 'desktop';
-  }
+  }*/
 }
 
 .cd-schedule .timeline {
@@ -657,4 +657,24 @@ body {
     right: 0;
     opacity: 0.3;
   }
+}
+
+.btn-purple {
+  color: rgb(228, 193, 114);
+  background-color: #713ec9;
+  border-color: rgb(228, 193, 114);
+  border-width: 3px;
+  &:hover {
+    color:  #713ec9;
+    background-color: rgb(228, 193, 114);
+    border-color: rgb(228, 193, 114);
+  }
+}
+
+.btn-xl {
+  padding: 0.5rem 1rem;
+  font-size: 1.67rem;
+  line-height: 2;
+  border-radius: 0.4rem;
+  z-index: 99999;
 }
